@@ -246,7 +246,7 @@ if not os.path.isdir(args.output_directory):
     print("Error: Value passed to --output_directory does not point to "
           "an existing folder")
 
-if (args.path_to_neutron_endf == "") and (args.path_to_gamma_endf ==""):
+if ((args.path_to_neutron_endf == "") and (args.path_to_gamma_endf =="")):
     print("Error: Both path to endf file are not provided") 
 
 # ===================================== Tape reservations
@@ -590,6 +590,6 @@ if not os.path.isdir(args.output_directory):
   print("Error: Value passed to --output_directory does not point to "
         "an existing folder")
 
-print("Copying outputfile to "+args.output_directory+output_filename)
+print("Copying outputfile to "+args.output_directory+"/"+output_filename)
 
-os.system("cp output "+args.output_directory+output_filename)
+os.system("cp output "+args.output_directory+"/"+output_filename)
