@@ -247,7 +247,7 @@ if not os.path.isdir(args.output_directory):
           "an existing folder")
 
 if ((args.path_to_neutron_endf == "") and (args.path_to_gamma_endf =="")):
-    print("Error: Both path to endf file are not provided") 
+  Raise ValueError ("Both path to endf file are not provided") 
 
 # ===================================== Tape reservations
 # The following tape numbers are used:
